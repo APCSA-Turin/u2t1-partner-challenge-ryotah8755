@@ -16,6 +16,22 @@ public class Calculator{
     // (THIS METHOD DOES NOT PRINT)
     public double performOperation(String operand, int num1, int num2) {
         //implement code here
+        if(operand == "+")
+        {
+         studentOutput = num1 + num2;   
+        }
+        if(operand == "-")
+        {
+         studentOutput = num1 - num2;   
+        }
+        if(operand == "*")
+        {
+         studentOutput = num1 + num2;   
+        }
+        if(operand == "/")
+        {
+         double studentOutput = (double)num1 + num2;   
+        }
         return 0.00;
     }
 
@@ -23,22 +39,39 @@ public class Calculator{
     // returns true, and if not, returns false
     // (THIS METHOD DOES NOT PRINT)
     public boolean divisibleBy(int num1, int num2) {
-        //implement code here
-        return false;
+        if (num1 ) num2 = 0
+
+        {
+           return true; 
+        
+        else
+        {
+             return false;
+
+        }}      ;
     }
 
     // method that constructs and returns a string representing a coordinate
     // pair in the format: "(x, y)"
     // (THIS METHOD DOES NOT PRINT)
     public String coordinatePair(int x, int y) {
-        //implement code here
-        return "";
+        //implement code her
+        e
+        return (" + x + "," + y + ")";;
     }
     // method that determines and returns the result of |num1 - num2|
     // (THIS METHOD DOES NOT PRINT)
     public int absoluteValue(int num1, int num2) {
-        //implement code here
-        return 0;
+       if ((num1 - num2) < 0)
+        {
+            return (num1 - num2) * -1;
+        }e
+       else
+        {
+            return num1 - num2;
+
+
+        };
     }
     
     // method that constructs and returns a String in the format:
@@ -47,6 +80,8 @@ public class Calculator{
     // (THIS METHOD DOES NOT PRINT)
     public String info() {
         //implement code here
+        String studentOutput = "This calculator is a model "+calculator.calcModel;
+        
         return "";
     }
 }
