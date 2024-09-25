@@ -3,7 +3,7 @@ public class Calculator{
     public String calcModel;
     
     //constructor that creates an instance of the calculator class
-    public Calculator() {
+    public Calculator(String name) {
         //implement code here
     }
     
@@ -18,19 +18,19 @@ public class Calculator{
         //implement code here
         if(operand == "+")
         {
-         studentOutput = num1 + num2;   
+         return num1 + num2;   
         }
-        if(operand == "-")
+        else if(operand == "-")
         {
-         studentOutput = num1 - num2;   
+            return num1 - num2;   
         }
-        if(operand == "*")
+        else if(operand == "*")
         {
-         studentOutput = num1 + num2;   
+            return num1 * num2;   
         }
-        if(operand == "/")
+        else if(operand == "/")
         {
-         double studentOutput = (double)num1 + num2;   
+            return (double)(num1 / num2);   
         }
         return 0.00;
     }
@@ -39,25 +39,24 @@ public class Calculator{
     // returns true, and if not, returns false
     // (THIS METHOD DOES NOT PRINT)
     public boolean divisibleBy(int num1, int num2) {
-        if (num1 ) num2 = 0
+        if (num1 % num2 <= 0)
 
         {
            return true; 
-        
+        }
         else
         {
-             return false;
+           return false;
 
-        }}      ;
+        }
     }
 
     // method that constructs and returns a string representing a coordinate
     // pair in the format: "(x, y)"
     // (THIS METHOD DOES NOT PRINT)
     public String coordinatePair(int x, int y) {
-        //implement code her
-        e
-        return (" + x + "," + y + ")";;
+        //implement code here
+        return ("(" + x + "," + y + ")");
     }
     // method that determines and returns the result of |num1 - num2|
     // (THIS METHOD DOES NOT PRINT)
@@ -65,13 +64,13 @@ public class Calculator{
        if ((num1 - num2) < 0)
         {
             return (num1 - num2) * -1;
-        }e
-       else
+        }
+       else;
         {
             return num1 - num2;
 
 
-        };
+        }
     }
     
     // method that constructs and returns a String in the format:
@@ -80,8 +79,8 @@ public class Calculator{
     // (THIS METHOD DOES NOT PRINT)
     public String info() {
         //implement code here
-        String studentOutput = "This calculator is a model "+calculator.calcModel;
+    return "This calculator is a model "+ calcModel +" where "+ calcModel+ " should be filled in with the value stored in the calcModel instance variable.";
         
-        return "";
+        
     }
 }
